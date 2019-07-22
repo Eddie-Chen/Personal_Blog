@@ -1,0 +1,419 @@
+<!doctype html>
+<html lang="zh-hant-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="http://website/" property="og:url">
+    <meta content="" name="description">
+    <meta content="" name="author">
+    <!--支援智慧型手機畫面大小-->
+    <meta content="width=device-width,initial-scale=1.0, minimum-scale=1.0, shrink-to-fit=no" name="viewport">
+    <title>文章</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/animate.css">
+
+</head>
+
+<body>
+    <!--導覽列-->
+    <!--inverted顏色反轉變黑色-->
+    <nav th:replace="_fragments :: menu(1)" class="ui inverted attached segment m-pd-tb-small m-shadow">
+        <div class="ui container">
+            <!-- stackable RWD -->
+            <div class="ui inverted secondary stackable menu">
+                <h2 class="ui teal header item">個人部落格</h2>
+                <a href="#" class="m-item item m-hide"><i class="home icon"></i>首頁</a>
+                <a href="#" class="m-item item m-hide"><i class="idea icon"></i>分類</a>
+                <a href="#" class="m-item item m-hide"><i class="tags icon"></i>標籤</a>
+                <a href="#" class="m-item item m-hide"><i class="info icon"></i>關於</a>
+                <div class="right m-item item m-hide">
+                    <div class="ui icon inverted transparent input m-mg-tb-03em">
+                        <input type="text" placeholder="search.....">
+                        <i class="search link icon"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="#" class="ui menu toggle black icon button m-right-top m-show">
+            <i class="sidebar icon"></i>
+        </a>
+    </nav>
+
+
+    <!-- Main Content -->
+    <div id="waypoint" class="m-container m-pd-tb-big animated fadeIn">
+        <div class="ui container">
+            <!-- Top Column -->
+            <div class="ui top attached segment">
+                <!-- link 讓顏色淡化 horizontal & list 呈水平-->
+                <div class="ui horizontal link list">
+                    <!-- Article Picture -->
+                    <div class="item">
+                        <img src="https://unsplash.it/100/100?image=1005" alt="" class="ui avatar image">
+                        <div class="content"><a href="#" class="header">Eddie Chen</a></div>
+                    </div>
+                    <!-- Post Date -->
+                    <div class="item">
+                        <i class="calendar icon"></i>2019-07-04
+                    </div>
+                    <!-- Reading Qty -->
+                    <div class="item">
+                        <i class="eye icon"></i>33
+                    </div>
+                </div>
+            </div>
+            <!-- Content Column -->
+            <!-- Content: Picture -->
+            <div class="ui attached segment">
+                <img src="https://unsplash.it/800/450?image=837" alt="" class="ui fluid rounded image">
+            </div>
+            <!-- Blog Content -->
+            <div class="ui attached segment padded">
+                <!-- Content: Label -->
+                <div class="ui right aligned basic segmnet">
+                    <div class="ui orange basic label">原創</div>
+                </div>
+                <!-- Content: Title -->
+                <h2 class="ui center aligned header">範例文章</h2>
+                <br>
+                <!-- Content: text -->
+                <div>
+                    <h2 id="section1">1.關於<i class="serif">Typo.css</i></h2>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <br>
+                    <br>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <br>
+
+                    <br>
+                    <br>
+
+                    <br>
+                    <br>
+                    <br>
+
+                    <br>
+
+                    v
+                    <br>
+
+                    <br>
+                    <br>
+
+                    <br><br>
+
+                    <br>
+                    <br>
+
+                    <br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+                </div>
+                <!-- 標籤 Label -->
+                <div class="m-pd-lr">
+                    <div class="ui basic teal left pointing label">方法論</div>
+                </div>
+                <!-- 讚 social button -->
+                <div class="ui center aligned basic segment">
+                    <button id="socialButton" class="ui orange basic circular button">分享</button>
+                </div>
+                <div class="ui socialClick flowing popup transition hidden">
+                    <div class="ui orange basic label">
+                        <div class="ui images" style="font-size: inherit !important;">
+                            <div class="image">
+                                <i class="facebook icon" style="font-size: 5em"></i>
+                                <div>Facebook</div>
+                            </div>
+                            <div class="image">
+                                <i class="twitter icon" style="font-size: 5em"></i>
+                                <div>Twitter</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- 作者資訊 -->
+            <div class="ui attached positive message">
+                <div class="ui middle aligned grid">
+                    <div class="eleven wide column">
+                        <ui class="list">
+                            <li>作者：Eddie Chen</li>
+                            <li>發表時間：2019-07-04 23:00</li>
+                        </ui>
+                    </div>
+                    <div class="five wide column">
+                        <img src="images/Line-QR.jpeg" alt="" class="ui right floated rounded bordered image"
+                            style="width:110px">
+                    </div>
+                </div>
+            </div>
+
+            <!-- 留言區 -->
+            <div id="comment-container" class="ui bottom attached segment">
+                <div class="ui teal segment">
+                    <div class="ui threaded comments">
+                        <!-- 留言區：標題-->
+                        <h3 class="ui dividing header">Comments</h3>
+                        <!-- 第三位留言 -->
+                        <div class="comment">
+                            <a class="avatar">
+                                <img src="https://unsplash.it/100/100?image=1005">
+                            </a>
+                            <div class="content">
+                                <a class="author">小飛</a>
+                                <div>
+                                    <span class="date">Today at 5:30 PM</span>
+                                </div>
+                                <div class="text">
+                                    How artistic!
+                                </div>
+                                <div class="actions">
+                                    <a class="reply">回覆</a>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 第二位留言 -->
+                        <div class="comment">
+                            <a class="avatar">
+                                <img src="https://unsplash.it/100/100?image=1005">
+                            </a>
+                            <div class="content">
+                                <a class="author">小滑</a>
+                                <div class="metadata">
+                                    <span class="date">Yesterday at 6:30 PM</span>
+                                </div>
+                                <div class="text">
+                                    This is very useful.Thank you
+                                </div>
+                                <div class="actions">
+                                    <a class="reply">回覆</a>
+                                </div>
+                            </div>
+                            <!-- 回應第二位留言 -->
+                            <div class="comments">
+                                <div class="comment">
+                                    <a class="avatar">
+                                        <img src="https://unsplash.it/100/100?image=1005">
+                                    </a>
+                                    <div class="content">
+                                        <a class="author">Jacky</a>
+                                        <div class="metadata">
+                                            <span class="date">Just now at 5:36 PM</span>
+                                        </div>
+                                        <div class="text">
+                                            That's great
+                                        </div>
+                                        <div class="actions">
+                                            <a class="reply">回覆</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- 第一位留言 -->
+                        <div class="comment">
+                            <a class="avatar">
+                                <img src="https://unsplash.it/100/100?image=1005">
+                            </a>
+                            <div class="content">
+                                <a class="author">黑狗兄</a>
+                                <div class="metadata">
+                                    <span class="date">5 days ago</span>
+                                </div>
+                                <div class="text">
+                                    Dude, this is awesome. Thanks
+                                </div>
+                                <div class="actions">
+                                    <a class="reply">回覆</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- 留言輸入框 -->
+                <div class="ui form">
+                    <!-- 輸入框 -->
+                    <div class="field">
+                        <textarea name="content" placeholder="請輸入留言內容......"></textarea>
+                    </div>
+                    <!-- 留言者資訊 -->
+                    <div class="fields">
+                        <!-- 姓名 -->
+                        <div class="field m-wide-100 m-mg-b-05em">
+                            <div class="ui left icon input">
+                                <i class="user icon"></i>
+                                <input type="text" name="nickname" placeholder="姓名">
+                            </div>
+                        </div>
+                        <!-- 信箱 -->
+                        <div class="field m-wide-100 m-mg-b-05em">
+                            <div class="ui left icon input">
+                                <i class="mail icon"></i>
+                                <input type="text" name="E-mail" placeholder="信箱">
+                            </div>
+                        </div>
+                        <!-- Send 按鈕 -->
+                        <div class="field m-wide-100 m-mg-b-05em">
+                            <button class="ui teal button m-wide-100"><i class="edit icon"></i>送出</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- End-留言輸入框 -->
+            </div>
+            <!-- End-留言區 -->
+        </div>
+    </div>
+
+   <!-- 
+   <div id="toolbar" class="m-pd-only-big m-fix m-right-bottom" style="display: none">
+        <div class="ui vertical icon buttons ">
+            <button type="button" class="ui toc teal button">目录</button>
+            <a href="#comment-container" class="ui teal button">留言</a>
+            <button class="ui wechat icon button"><i class="weixin icon"></i></button>
+            <div id="toTop-button" class="ui icon button"><i class="chevron up icon"></i></div>
+        </div>
+    </div>
+
+    <div class="ui toc-container flowing popup transition hidden" style="width: 250px!important;">
+        <ol class="js-toc">
+
+        </ol>
+    </div>
+
+    <div id="qrcode" class="ui wechat-qr flowing popup transition hidden " style="width: 130px !important;">
+    </div>
+-->
+    <!--底部-->
+    <footer class="ui inverted vertical segment m-nav-footer">
+        <div class="ui center aligned container">
+            <div class="ui divided inverted grid stackable">
+                <div class="three wide column">
+                    <div class="ui inverted link list">
+                        <div class="item">
+                            <img src="../static/images/Line-QR.jpeg" class="ui rounded image" alt="" style="width:50％">
+                        </div>
+                    </div>
+                </div>
+                <div class="three wide column">
+                    <h3 class="ui inverted header">最新文章</h3>
+                    <div class="ui inverted link list ">
+                        <a href="#" class="item">用戶故事</a>
+                        <a href="#" class="item">用戶故事</a>
+                        <a href="#" class="item">用戶故事</a>
+                    </div>
+                </div>
+
+                <div class="three wide column">
+                    <h3 class="ui inverted header">聯絡方式</h3>
+                    <div class="ui inverted link list ">
+                        <a href="#" class="item">個人信箱:edstar0530@hotmail.com</a>
+                        <a href="#" class="item">個人手機:0979066XXX</a>
+                    </div>
+                </div>
+                <div class="seven wide column">
+                    <h3 class="ui inverted header">自我介紹</h3>
+                    <p>個人設計的部落格</p>
+                    <p>前端使用技術：HTML, CSS, Semantic UI, jQuery</p>
+                </div>
+            </div>
+            <div class="ui inverted section divider"></div>
+            <p class="m-footer-copy">2019 個人創造</p>
+        </div>
+
+
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.2/dist/semantic.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/jquery.scrollto@2.1.2/jquery.scrollTo.min.js"></script>
+
+
+
+    <script>
+        /*手機導覽欄*/
+        $('.menu.toggle').click(function () {
+            $('.m-item').toggleClass('m-hide');
+        });
+        /*Social Button*/
+        $('#socialButton').popup({
+            popup: $('.socialClick.popup'),
+            on: 'click',
+            position: 'bottom center'
+        });
+
+
+        /* 尚未完成
+        右下方快捷鍵
+        tocbot.init({
+            // Where to render the table of contents.
+            tocSelector: '.js-toc',
+            // Where to grab the headings to build the table of contents.
+            contentSelector: '.js-toc-content',
+            // Which headings to grab inside of the contentSelector element.
+            headingSelector: 'h1, h2, h3',
+        });
+
+        $('.toc.button').popup({
+            popup: $('.toc-container.popup'),
+            on: 'click',
+            position: 'left center'
+        });
+
+        $('.wechat').popup({
+            popup: $('.wechat-qr'),
+            position: 'left center'
+        });
+
+        var qrcode = new QRCode("qrcode", {
+            text: "http://jindo.dev.naver.com/collie",
+            width: 110,
+            height: 110,
+            colorDark: "#000000",
+            colorLight: "#ffffff",
+            correctLevel: QRCode.CorrectLevel.H
+        });
+
+        $('#toTop-button').click(function () {
+            $(window).scrollTo(0, 500);
+        });
+
+
+        var waypoint = new Waypoint({
+            element: document.getElementById('waypoint'),
+            handler: function (direction) {
+                if (direction == 'down') {
+                    $('#toolbar').show(100);
+                } else {
+                    $('#toolbar').hide(500);
+                }
+                console.log('Scrolled to waypoint!  ' + direction);
+            }
+        })
+        */
+    </script>
+</body>
+
+</html>
